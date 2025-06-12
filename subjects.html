@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Subjects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Subjects</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="todo.html">To-Do</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="timer.html">Study Timer</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="subjects-list">
+            <h2>Current Subjects</h2>
+            <div id="subjects-container">
+                <!-- Subjects will be added here -->
+            </div>
+            
+            <form id="add-subject-form">
+                <input type="text" id="subject-name" placeholder="Subject name" required>
+                <input type="text" id="subject-grade" placeholder="Current grade (optional)">
+                <button type="submit">Add Subject</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Student Planner</p>
+    </footer>
+    
+    <script src="js/subjects.js"></script>
+</body>
+</html>
