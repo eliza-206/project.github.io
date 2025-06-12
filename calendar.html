@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calendar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="todo.html">To-Do</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="timer.html">Study Timer</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="calendar-view">
+            <h2>Upcoming Deadlines</h2>
+            
+            <div class="month">
+                <h3>June 2023</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td class="deadline">16*</td><td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td><td>26</td><td class="deadline">27*</td><td>28</td><td>29</td><td>30</td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Deadline dates</p>
+            </div>
+            
+            <div class="events">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li><strong>June 16</strong> - Math Assignment Due</li>
+                    <li><strong>June 27</strong> - History Exam</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Student Planner</p>
+    </footer>
+</body>
+</html>
