@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Timer</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="todo.html">To-Do</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="timer.html">Study Timer</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="pomodoro-timer">
+            <h2>Pomodoro Timer</h2>
+            
+            <div class="timer-display" id="timer">25:00</div>
+            
+            <div class="timer-controls">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            
+            <div class="timer-settings">
+                <label for="study-time">Study Time (minutes):</label>
+                <input type="number" id="study-time" value="25" min="1" max="60">
+                
+                <label for="break-time">Break Time (minutes):</label>
+                <input type="number" id="break-time" value="5" min="1" max="30">
+            </div>
+            
+            <div class="timer-status" id="status">Ready to study!</div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Student Planner</p>
+    </footer>
+    
+    <script src="js/timer.js"></script>
+</body>
+</html>
