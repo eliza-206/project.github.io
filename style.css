@@ -1,0 +1,290 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: #3a5a8a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    background-color: #2a4a7a;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a6fa5;
+    color: white;
+}
+
+/* Home Page Styles */
+.welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#motivational-quote {
+    font-style: italic;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #e8f4fc;
+    border-left: 4px solid #4a6fa5;
+}
+
+#change-quote {
+    padding: 0.5rem 1rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quick-links {
+    margin-top: 2rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.link-box {
+    display: block;
+    width: 200px;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Subjects Page Styles */
+.subjects-list {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#subjects-container {
+    margin: 1rem 0;
+}
+
+.subject-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+#add-subject-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#add-subject-form input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-subject-form button {
+    padding: 0.5rem 1rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* To-Do Page Styles */
+.todo-list {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#add-task-form {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-task-form button {
+    padding: 0.5rem 1rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    color: #d33;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Calendar Page Styles */
+.calendar-view {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.month table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.month th, .month td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.month th {
+    background-color: #f5f5f5;
+}
+
+.deadline {
+    background-color: #ffebee;
+    font-weight: bold;
+}
+
+.events {
+    margin-top: 2rem;
+}
+
+.events ul {
+    list-style: none;
+}
+
+.events li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Timer Page Styles */
+.pomodoro-timer {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.timer-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.timer-controls button {
+    padding: 0.5rem 1rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.timer-settings {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timer-settings input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.timer-status {
+    margin-top: 1rem;
+    font-style: italic;
+}
